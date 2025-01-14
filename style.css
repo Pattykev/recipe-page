@@ -115,3 +115,87 @@ body{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-elements {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Styles pour les listes */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Attribution */
+.attribution {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+    .container{
+        display: flex;
+        margin: 0 auto;
+    }
+    .container-elements{
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+    
+    h2 {
+        font-size: 1em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+
+    .nutrition div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nutrition span {
+        flex: 1;
+        text-align: right;
+    }
+}
