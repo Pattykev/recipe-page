@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Young Serif' ;
+    src: url('./assets//fonts/young-serif/YoungSerif-Regular.ttf');
+    font-weight: 400 ;
+}
+@font-face {
+    font-family:'Outfit' ;
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+    font-weight: 400, 600, 700;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone-lightest: hsl(30, 54%, 90%);
+    --Stone-light: hsl(30, 18%, 87%);
+    --Stone: hsl(30, 10%, 34%);
+    --Stone-dark: hsl(24, 5%, 18%);
+    --Brown: hsl(14, 45%, 36%);
+    --Rose-dark: hsl(332, 51%, 32%);
+    --Rose:hsl(332, 48%, 94%);
+    --Rose-light: hsl(330, 100%, 98%);
+}
+
+
+body{
+    font-family: 'Outfit' ,'Young Serif';
+    font-size: 16px;
+    background-color: var(--Rose);
+    color: var(--Stone);
+}
+.container{
+    width: 47rem;
+    background-color: var(--White);
+    margin: 8rem auto;
+    border-radius: 15px;
+    padding-bottom: 2rem;
+}
+.container hr{
+    color: var(--White);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.container-elements img{
+    width: 43rem;
+    border-radius: 15px;
+    margin-top: 2.5rem;
+    padding: 0;
+
+   
+}
+.container-elements{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+.container-elements .preparation ul li, .container-elements .ingredients ul li, .container-elements .instruction ol li{ 
+    margin-right: 2.5rem;
+    padding-bottom: 1rem;
+}
+.container-elements .preparation h2{
+    color: var(--Rose-dark);
+}
+.container-elements .preparation{
+    background-color: var(--Rose-light);
+    padding: 10px 10px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.container-elements h2{
+    color: var(--Brown);
+}
+.container span{
+    font-weight: 600;
+}
+
+.container h1{
+    margin-top: 2rem;
+    color: var(--Stone-dark);
+    font-family: 'Young Serif';
+}
+
+.container-elements .ingredients h2, .container-elements .instruction h2, .container-elements .nutrition h2{
+    font-family: 'Young Serif';
+}
+.container-elements .nutrition span{
+    padding-right: 10rem;
+    padding-left: 3rem;
+}
+.container-elements .nutrition{
+    margin-top: 2rem;
+}
+.container-elements .nutrition hr{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ ol, ul{
+    list-style: none;
+ }
+
+ ul li::before {
+    content: "•";
+    color: var(--Brown); 
+    padding-right: 10px;
+    font-weight: 600;
+}
+ ol li::before {
+    content: counter(li)"."; 
+    color: var(--Brown); 
+    padding-right: 10px;
+    font-weight: 600;
+}
+ li {counter-increment: li}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
